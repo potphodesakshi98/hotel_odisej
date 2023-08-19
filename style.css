@@ -1,0 +1,253 @@
+@font-face {
+    font-family: pp woodland;
+    src: url(PPWoodland-Regular.ttf);
+}
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+html,body
+{
+width: 100%;
+height: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+
+#nav{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 80px;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+
+}
+#nav-part1{
+    width: 35px;
+    height: 30px;
+    /* background-color: yellow; */
+}
+.line{
+    width: 100%;
+    height: 4px;
+    background-color: #434B34;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+
+
+button{
+    font-size: 17px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 500;
+    border: 1px solid #434B34;
+    background-color: #434B34;
+    color: #fff;
+    margin-left: 10px;
+}
+button:nth-child(1){
+    color: #434B34;
+    background-color: transparent;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+    /* background-color: #000; */
+}
+#page1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#page1 svg{
+    top: -15%;
+    position: absolute;
+    scale: 0.2;
+    /* position: relative; */
+    fill: #434B34;
+    z-index: 9;
+}
+#page2{
+    width: 100%;
+    height: 150vh;
+    background-color: #5B6647;
+    position: relative;
+}
+#page2 svg{
+    position: absolute;
+}
+#text-container{
+    padding-top: 15vh;
+    min-height: 60vh;
+    width: 100%;
+}
+#text-container h2{
+    position: relative;
+    z-index: 9;
+    line-height:5.5vw;
+    font-size: 4.9vw;
+    text-align: center;
+    font-family: PP Woodland;
+    /* color: #E3E3C4; */
+    font-weight: 200;
+    color: #434B34;
+}
+#text-container h3{
+    position: relative;
+    z-index: 9;
+    line-height:5.5vw;
+    font-size: 4.9vw;
+    text-align: center;
+    font-family: PP Woodland;
+    /* color: #E3E3C4; */
+    font-weight: 200;
+    color: #434B34;
+}
+#page2 #svg1{
+    /* left: -50vw; */
+    bottom: -10%;
+    height: 20vh;
+    width: 250vw;
+    fill: #E3E3C4;
+    position: absolute;
+    z-index: 1;
+    /* left: -50%; */
+}
+
+#page2 #svg2{
+    bottom: -10%;
+    height: 40vh;
+    width: 250vw;
+    left:-10vw;
+    fill: #5B6647;
+    position: absolute;
+    z-index: 9;
+    
+}
+
+#page3{
+    z-index: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F7F7EE;
+    position: relative;
+    padding-top: 30vh;
+}
+#text-page3{
+    width: 100%;
+    /* text-align: center; */
+    /* position: absolute; */
+    /* margin-top: 30vh; */
+    top: 20vh;
+    /* background-color: #e92b2b; */
+
+}
+#text-page3 h1{
+    text-align: center;
+    font-size: 4.7vw;
+    font-family: pp woodland;
+    color: #E3E3C4;
+    font-weight: 500;
+}
+#bottom-page3{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: #32adad; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bottom-part1{
+    width: 50%;
+    min-height: 100vh;
+    /* background-color: aliceblue; */
+    padding: 100px 100px;
+
+}
+#bottom-part1 p{
+
+    font-family: gilroy;
+    font-size: 1.1vw;
+    line-height: 1.4vw;
+    color: #5B6647;
+    font-weight: 500;
+    margin-bottom: 5vh;
+}
+#bottom-part1-explore {
+    width: 45vh;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10vh;
+    /* gap: 10vh; */
+    /* background-color: #fff; */
+}
+#bottom-part1-explore  h3{
+    
+    color: #434B34;
+    font-size: 1.6vw;
+    font-family: gilroy;
+    font-weight: 500;
+    /* margin-right: 0vh; */
+}
+#bottom-part1 #bottom-part1-img{
+    width: 85vh;
+    height: 50vh;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20vh;
+}
+#bottom-part1-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#bottom-part1 button{
+    padding: 5px 10px;
+}
+#bottom-part2{
+    width: 50%;
+    min-height: 100vh;
+    /* background-color: #5B6647; */
+    
+}
+#bottom-part2 #image{
+    width: 80%;
+    height: 60vh;
+    border-radius: 20px;
+    /* overflow: hidden; */
+}
+#bottom-part2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+#bottom-part2 #image2{
+    width: 20vw;
+    height: 22vw;
+    background-color: aqua;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 2.5vh;
+} 
+#bottom-part2 #image2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
